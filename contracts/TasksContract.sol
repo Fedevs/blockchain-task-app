@@ -5,7 +5,7 @@ contract TasksContract {
     uint public taskCounter = 0;
 
     constructor () {
-        createTask("Mi primer tarea de ejemplo", "Tengo que hacer algo");
+        createTask("To do the dishes", "Do it well!");
     }
 
     event TaskCreated(

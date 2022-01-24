@@ -78,7 +78,9 @@ App = {
         await App.tasksContract.toggleDone(id, {
             from: App.account
         })
-        window.location.reload();
+        .catch(() => {
+            window.location.reload();
+        })
     },
 }
 

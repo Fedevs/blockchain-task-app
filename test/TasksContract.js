@@ -18,8 +18,8 @@ contract("TasksContract", () => {
         const tasksCounter = await this.tasksContract.taskCounter();
         const task = await this.tasksContract.tasks(tasksCounter);
         assert.equal(task.id.toNumber(), tasksCounter);
-        assert.equal(task.title, "Mi primer tarea de ejemplo");
-        assert.equal(task.description, "Tengo que hacer algo");
+        assert.equal(task.title, "To do the dishes");
+        assert.equal(task.description, "Do it well!");
         assert.equal(task.done, false);
         assert.equal(tasksCounter, 1);
     })
